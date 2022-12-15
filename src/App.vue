@@ -1,11 +1,23 @@
-<script setup>
-
-</script>
-
 <template>
+  <v-app theme="dark">
 
+    <SideBar />
+
+    <v-main>
+
+    </v-main>
+
+  </v-app>
 </template>
 
-<style scoped>
+<script>
+import SideBar from './components/SideBar.vue'
 
-</style>
+export default {
+  name: 'App',
+  components: {
+    SideBar
+  }
+
+}
+</script>
