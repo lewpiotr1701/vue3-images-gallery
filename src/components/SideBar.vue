@@ -9,6 +9,8 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
+            <v-list-item :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+                title="Toggle Theme" value="theme" @click="onClick"></v-list-item>
             <v-list-item prepend-icon="mdi-image" title="Color images" value="color"></v-list-item>
             <v-list-item prepend-icon="mdi-dialpad" title="Gray images" value="grayColor"></v-list-item>
         </v-list>
@@ -17,6 +19,19 @@
 
 <script>
 export default {
-    name: 'SideBar'
+    name: 'SideBar',
+    props: ['themeProp'],
+    data() {
+        return {
+            theme: this.themeProp
+        }
+    },
+    methods: {
+        onClick() {
+            this.theme = this.theme === 'light' ? 'dark' : 'light'
+
+            this.$emit('toggleTheme', this.theme)
+        }
+    }
 }
 </script>

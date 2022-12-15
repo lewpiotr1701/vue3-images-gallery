@@ -1,7 +1,7 @@
 <template>
-  <v-app theme="dark">
+  <v-app :theme="theme">
 
-    <SideBar />
+    <SideBar @toggle-theme="toggleTheme" :themeProp="theme" />
 
     <v-main>
 
@@ -17,6 +17,16 @@ export default {
   name: 'App',
   components: {
     SideBar
+  },
+  data() {
+    return {
+      theme: 'light'
+    }
+  },
+  methods: {
+    toggleTheme(themeValue) {
+      this.theme = this.theme === 'light' ? 'dark' : 'light'
+    }
   }
 
 }
