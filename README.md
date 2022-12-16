@@ -1,6 +1,12 @@
-# vue3-images-gallery
+# Images Gallery
+```
+Vue3 app build with Vite and Vuetify which renders images from (https://picsum.photos).
+Possibility to change theme (dark / light) and change color of images (colorful / gray).
+```
 
+```
 This template should help get you started developing with Vue 3 in Vite.
+```
 
 ## Recommended IDE Setup
 
