@@ -1,6 +1,6 @@
 <template>
     <v-row>
-        <v-col v-for="n in 240" :key="n" cols="1">
+        <v-col v-for="n in 120" :key="n" cols="6" sm="4" md="2" lg="1">
             <v-card>
                 <v-img :src="`https://picsum.photos/500/300?image=${n * 4}`"
                     :lazy-src="`https://picsum.photos/10/6?image=${n * 4}`" aspect-ratio="1" cover>
