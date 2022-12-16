@@ -1,8 +1,8 @@
 <template>
   <v-app :theme="theme">
-    <SideBar @toggle-theme="toggleTheme" :current-theme="theme" />
+    <SideBar @toggle-theme="toggleTheme" @select-color="selectColor" :current-theme="theme" />
     <v-main>
-      <Gallery />
+      <Gallery :color="color" />
     </v-main>
   </v-app>
 </template>
@@ -19,12 +19,17 @@ export default {
   },
   data() {
     return {
-      theme: 'dark'
+      theme: 'dark',
+      color: true
     }
   },
   methods: {
     toggleTheme(themeValue) {
       this.theme = themeValue
+    },
+    selectColor(color) {
+      this.color = color
+      console.log(this.color)
     }
   }
 
