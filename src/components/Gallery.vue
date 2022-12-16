@@ -1,7 +1,7 @@
 <template>
     <v-card class="ma-4 pa-2">
         <v-row>
-            <v-col v-for="n in 24" :key="n" cols="6" sm="4" md="2" lg="1">
+            <v-col v-for="n in 120" :key="n" cols="6" sm="4" md="2" lg="1">
                 <v-hover v-slot="{ isHovering, props }">
                     <v-card :elevation="isHovering ? 12 : 2" v-bind="props"
                         @click="copyUrl(`https://picsum.photos/500/300?image=${n * 4}${color ? '' : '&grayscale'}`)">
