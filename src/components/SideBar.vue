@@ -20,10 +20,13 @@
 <script>
 export default {
     name: 'SideBar',
-    props: ['themeProp'],
+    props: {
+        currentTheme: String,
+        required: true
+    },
     data() {
         return {
-            theme: this.themeProp
+            theme: this.currentTheme
         }
     },
     methods: {
