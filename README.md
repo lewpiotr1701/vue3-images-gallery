@@ -1,11 +1,9 @@
 # Images Gallery
-```
-Vue3 app build with Vite and Vuetify which renders images from [Lorem Picsum](https://picsum.photos).
-Possibility to change theme (dark / light) and change color of images (colorful / gray).
-```
 
+[Lorem Picsum](https://picsum.photos)
 ```
-This template should help get you started developing with Vue 3 in Vite.
+Vue3 app build with Vite and Vuetify which renders images from lorem picsum.
+Possibility to change theme (dark / light) and change color of images (colorful / gray).
 ```
 
 ## Recommended IDE Setup
