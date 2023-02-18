@@ -1,4 +1,5 @@
 # Image Gallery
+
 Simple Image Gallery app that displays images from [Lorem Picsum](https://picsum.photos).
 
 ## Project Specifications
