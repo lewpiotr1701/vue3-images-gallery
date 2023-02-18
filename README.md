@@ -1,18 +1,14 @@
-# Images Gallery
+# Image Gallery
+Simple Image Gallery app that displays images from [Lorem Picsum](https://picsum.photos).
 
-[Lorem Picsum](https://picsum.photos)
-```
-Vue3 app build with Vite and Vuetify which renders images from lorem picsum.
-Possibility to change theme (dark / light) and change color of images (colorful / gray).
-```
+## Project Specifications
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Vuetify
+- Fetch images
+- Dispaly images using grid as a layout
+- Toggle theme (dark / light)
+- Change color of images (colorful / gray)
+- Copy image's url on click
 
 ## Project Setup
 
