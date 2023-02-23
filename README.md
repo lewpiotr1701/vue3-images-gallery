@@ -8,7 +8,7 @@ Simple Image Gallery app that displays images from [Lorem Picsum](https://picsum
 - Fetch images
 - Dispaly images using grid as a layout
 - Toggle theme (dark / light)
-- Change color of images (colorful / gray)
+- Change color of images
 - Copy image's url on click
 
 ## Project Setup
